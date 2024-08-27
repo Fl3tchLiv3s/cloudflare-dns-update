@@ -1,0 +1,9 @@
+[Unit]
+Description=Update external IP Address in cloudflare every 10 min
+
+[Timer]
+OnUnitActiveSec=600s
+OnBootSec=10s
+
+[Install]
+WantedBy=timers.target
