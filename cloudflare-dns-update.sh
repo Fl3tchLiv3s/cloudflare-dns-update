@@ -2,7 +2,7 @@
 
 LOG_FILE="/var/log/dnsUpdate/cloudflare-dns-update.log"
 IP_ADDRESS_FILE="/tmp/current-ipaddress.txt"
-CONFIG="~/scripts/cloudflare-dns-update.cfg"
+CONFIG="./cloudflare-dns-update.cfg"
 
 #Read key/value config data
 while IFS="=" read -r key value; do
