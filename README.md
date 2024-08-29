@@ -13,13 +13,13 @@ CF_BEARER=<token>
 
 To find the cloudflare record details, go to the dashboard: https://dash.cloudflare.com then navigate to websites and your domain management page.
 
-On the bottom right is the Zone ID. 
+ZONE_ID - On the bottom right is the Zone ID. 
 
-A record is your domain (e.g. yourdomain.com) 
+A_record - your domain (e.g. yourdomain.com) 
 
-You can set up a token by going to the top right dropdown and selecting 'My Profile' then 'API tokens'. Create a token with the following PErmissions: Zone.Zone Settings, Zone.Zone, Zone.DNS and Resources: All Zones  
+CF_BEARER - You can set up a token by going to the top right dropdown and selecting 'My Profile' then 'API tokens'. Create a token with the following PErmissions: Zone.Zone Settings, Zone.Zone, Zone.DNS and Resources: All Zones
 
-A record id can be found using the curl command:
+A_record_id - can be found using the curl command:
 
 `curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
 -H "Authorization: Bearer <token>" \
